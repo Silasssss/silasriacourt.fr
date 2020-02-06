@@ -343,16 +343,35 @@ footer {
     text-transform: initial;
 
 }
+
 #section_error h1 i {
 
     font-size: 1.2em;
 
 }
 
-.languages{
+.languages {
     margin-top: 2vh;
 }
+
 .languages i {
     font-size: 3em;
     color: white;
+}
+
+/* tous les téléphones */
+@media only screen and (max-width: 767px) {
+    
+    body{
+
+    }
+}
+/* dekstops and laptops */
+@media only screen and (min-width : 1224px) {
+    /* Styles pour cette Media Queries */
+}
+
+/* large screens */
+@media only screen and (min-width : 1824px) {
+    /* Styles pour cette Media Queries */
 }
