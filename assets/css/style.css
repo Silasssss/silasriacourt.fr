@@ -348,3 +348,11 @@ footer {
     font-size: 1.2em;
 
 }
+
+.languages{
+    margin-top: 2vh;
+}
+.languages i {
+    font-size: 3em;
+    color: white;
+}
