@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 
@@ -11,9 +11,13 @@
     <meta name="author" content="RIACOURT Silas">
     <meta name="keywords" content="riacourt, silas, étudiant, informatique, DUT, IUT Lannion" />
 
-    <!-- <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CSource+Sans+Pro:200,300,400,500&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/6d9c493a3d.js" crossorigin="anonymous"></script>
+
     <!--    Style css du site  -->
+
     <link href="assets/css/style.css" rel="stylesheet">
 
     <title>Silas</title>
@@ -22,12 +26,22 @@
 <body>
 
     <div class="terminal">
-        <h1>r00t@silas.fr:$</h1><input id="terminal__" type="text" value="cd ~/about" maxlength="12" size="20"
-            autofocus></input></span></h1>
+        <h1>r00t@silas.fr:$</h1><input id="terminal__" type="text" value="cd ~/about" maxlength="13" size="20"
+            autofocus>
         <div class="terminal-menu">
-            <h3>skills</h3>
-            <h3>projects</h3>
-            <h3>about</h3>
+
+            <a id="skills" href="#skills">
+                <h3>skills</h3>
+            </a>
+            <a id="projects" href="#projects">
+                <h3>projects</h3>
+            </a>
+            <a id="educations" href="#educations">
+                <h3>educations</h3>
+            </a>
+            <a id="about" href="#about">
+                <h3>~</h3>
+            </a>
         </div>
 
     </div>
@@ -38,29 +52,56 @@
 
         <h1><i class="fas fa-code"></i> Etudiant en informatique</h1>
         <div class="content">
+
+
             <h2>Actuellement en alternance en développement d’applications logicielles.
             </h2>
             <p>je souhaite me diriger dans le développement informatique. Curieux et persévérant j'aime apprendre et
                 découvrir de nouveaux langages notamment dans les technologies du web.</p>
 
-                <div class="languages"> 
-
-                    <img src="https://img.icons8.com/color/96/000000/html-5.png">
-                    <img src="https://img.icons8.com/color/96/000000/css3.png">
-                    <img src="https://img.icons8.com/color/96/000000/javascript.png">
-                
-                    <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png">
-                </div>
 
         </div>
     </div>
     <div id="section_2" class="content_section">
 
-        <h1><i class="fas fa-code"></i> Mes Projets</h1>
+        <h1><i class="fas fa-code"></i> Mes compétences</h1>
         <div class="content">
-            <h2>Tqt j'vais remplir
-            </h2>
-            <p>toujours rien .....zzzZZZZZ²²²</p>
+
+            <p>Voici les différents languages / technologies avec lesquelles je suis a l'aise.</p>
+            <p>Je travaille aussi avec GIT et Jenkins pour le deploiement</p>
+            <div class="languages">
+
+                <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="icon HTML5">
+                <img src="https://img.icons8.com/color/96/000000/css3.png" alt="icon CSS3">
+                <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="icon JS">
+                <img src="https://img.icons8.com/officel/96/000000/php-logo.png">
+                <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" alt="icon Java">
+                <img src="https://img.icons8.com/color/96/000000/c-sharp-logo.png">
+            </div>
+        </div>
+    </div>
+    <div id="section_3" class="content_section">
+
+        <h1><i class="fas fa-code"></i> Mes projects</h1>
+        <div class="content">
+
+            <p>Voici la liste des différents projets que j'ai pu réalisé avec leur code source ainsi qu'un lien pour une
+                démonstration</p>
+
+        </div>
+    </div>
+    <div id="section_4" class="content_section">
+
+        <h1><i class="fas fa-code"></i> Mon parcours</h1>
+        <div class="content">
+
+            <p>Diplomé d'un BAC S je décide ensuite de poursuivre sur un DUT Informatique à l'IUT de Lannion.<br/>Actuellement en
+                2ème année je souhaite poursuivre jusqu'à BAC+5 en école d'ingénieur ou en Master.</p>
+            <ul>
+                <li><strong>2021</strong> - L3 Informatique? <i>? :)</i></li>
+                <li><strong>2020</strong> - DUT Informatique <i>Université Rennes 1, IUT Lannion</i></li>
+                <li><strong>2018</strong> - Baccalauréat Scientifique <i>Lycée Fulgence Bienvenue, Loudéac</i></li>
+            </ul>
         </div>
     </div>
     <div id="section_error" class="content_section">
@@ -87,38 +128,12 @@
         <h2>© 2020 silas.fr tout droits réservés - mentions légales</h2>
 
         <h1><b>;</b></h1>-->
-        <div class="footer_left"><b>$</b>egmentation fault</div>
+        <div class="footer_left">vardump(<b>$</b>footer)</div>
         <div class="footer_central">© 2020 silas.fr tout droits réservés</div>
         <div class="footer_right">;</div>
     </footer>
+    <script src="assets/js/app.js"></script>
 </body>
-<script>
 
-document.getElementById("section_error").style.display = "none"; 
-document.getElementById("section_2").style.display = "none";
-    var terminal = document.getElementById("terminal__")
-        terminal.addEventListener('keyup', function (e) {
-            if (e.keyCode == 13) {
-                if(terminal.value.includes("skills")){
-                    //console.log("skills")
-                  //  document.location.href = "#skills";
-                    document.getElementById("section_2").style.display = "block";
-                    document.getElementById("section_1").style.display = "none";
-                    document.getElementById("section_error").style.display = "none";   
-                }else if (terminal.value.includes("about")){
-                    document.getElementById("section_1").style.display = "block";
-                    document.getElementById("section_2").style.display = "none";
-                    document.getElementById("section_error").style.display = "none";     
-                    //document.location.href = "#about";
-                }else{
-                    document.getElementById("section_1").style.display = "none";
-                    document.getElementById("section_2").style.display = "none"; 
-                    document.getElementById("section_error").style.display = "flex";                 
-                }
-                
-            }
-        });
-
-</script>
 
 </html>
